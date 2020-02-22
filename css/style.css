@@ -209,25 +209,72 @@ h4 {
     cursor: pointer;
 
 }
+
 /*=============================section-lets==================*/
-.section-lets{
+.section-lets {
     background: url(../img/letsgrow.png) center no-repeat;
     background-size: cover;
 }
+
 .section-lets h3,
 .section-lets h4,
-.section-lets p{
+.section-lets p {
     color: #ffffff;
 }
-.section-lets h3{
+
+.section-lets h3 {
     font-size: 48px;
 }
-.section-lets h4{
+
+.section-lets h4 {
     font-size: 50px;
     font-weight: 600;
 }
-.section-lets p{
+
+.section-lets p {
     font-size: 20px;
+}
+
+/*=============================section-design==================*/
+.section-design h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #484848;
+}
+
+.section-design h3 {
+    font-size: 33px;
+    color: #484848;
+}
+
+.section-design h4 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #484848;
+}
+
+.section-design i {
+    font-size: 80px;
+    background: linear-gradient(45deg, rgba(255, 3, 8, .75) 2%, rgba(8, 6, 250, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 15px;
+}
+.section-design p {
+    font-size: 14px;
+}
+.embed-responsive{
+    position: relative;
+    border-radius: 10px;
+}
+#videoPlayBtn{
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    background: url(../img/play.png) center no-repeat;
 }
 /*large Devices, Wide Screen*/
 @media only screen and(max-width: 1200px) {
