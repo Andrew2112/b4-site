@@ -164,7 +164,44 @@ h4 {
     color: #ffffff;
     background-color: #da1757;
 }
+/*========================Progress Section=========================*/
+.section-progress{
+    background-color: #4b2d7f;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 0;
+}
+.section-progress i{
+    font-size: 70px;
 
+}
+.section-progress .num{
+    font-size: 50px;
+    font-weight: 600;
+    margin: 30px 0 20px;
+}
+.progress-item h4 span{
+    font-weight: 600;
+    font-size: 30px;
+}
+.section-progress .progress-item h4{
+    font-weight: 400;
+    font-size: 25px;
+    height: 72px;
+    overflow: hidden;
+    /*width: 250px;*/
+    /*margin: 0 0 40px 50px;*/
+}
+.section-progress .progress-item{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    transition: all .5s;
+}
+.section-progress .progress-item:hover{
+    background-color: #40286a;
+    cursor: pointer;
+
+}
 /*large Devices, Wide Screen*/
 @media only screen and(max-width: 1200px) {
 
@@ -219,6 +256,11 @@ h4 {
     section{
         padding: 50px 0;
     }
+    .section-progress .progress-item {
+
+        padding-bottom: 0px;
+
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -257,6 +299,11 @@ h4 {
         border-radius: 10px;
         padding: 10px 15px;
         transition: all .5s;
+    }
+    .section-progress .progress-item {
+
+        padding-top: 40px;
+
     }
 
 }
