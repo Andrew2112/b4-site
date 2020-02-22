@@ -164,27 +164,32 @@ h4 {
     color: #ffffff;
     background-color: #da1757;
 }
+
 /*========================Progress Section=========================*/
-.section-progress{
+.section-progress {
     background-color: #4b2d7f;
     color: #ffffff;
     font-size: 15px;
     padding: 0;
 }
-.section-progress i{
+
+.section-progress i {
     font-size: 70px;
 
 }
-.section-progress .num{
+
+.section-progress .num {
     font-size: 50px;
     font-weight: 600;
     margin: 30px 0 20px;
 }
-.progress-item h4 span{
+
+.progress-item h4 span {
     font-weight: 600;
     font-size: 30px;
 }
-.section-progress .progress-item h4{
+
+.section-progress .progress-item h4 {
     font-weight: 400;
     font-size: 25px;
     height: 72px;
@@ -192,15 +197,37 @@ h4 {
     /*width: 250px;*/
     /*margin: 0 0 40px 50px;*/
 }
-.section-progress .progress-item{
+
+.section-progress .progress-item {
     padding-top: 80px;
     padding-bottom: 80px;
     transition: all .5s;
 }
-.section-progress .progress-item:hover{
+
+.section-progress .progress-item:hover {
     background-color: #40286a;
     cursor: pointer;
 
+}
+/*=============================section-lets==================*/
+.section-lets{
+    background: url(../img/letsgrow.png) center no-repeat;
+    background-size: cover;
+}
+.section-lets h3,
+.section-lets h4,
+.section-lets p{
+    color: #ffffff;
+}
+.section-lets h3{
+    font-size: 48px;
+}
+.section-lets h4{
+    font-size: 50px;
+    font-weight: 600;
+}
+.section-lets p{
+    font-size: 20px;
 }
 /*large Devices, Wide Screen*/
 @media only screen and(max-width: 1200px) {
@@ -253,9 +280,11 @@ h4 {
         width: 50%;
         bottom: 0;
     }
-    section{
+
+    section {
         padding: 50px 0;
     }
+
     .section-progress .progress-item {
 
         padding-bottom: 0px;
@@ -291,19 +320,20 @@ h4 {
         width: 90%;
         bottom: 0;
     }
+
     .section-watch .nav-pills {
         margin-bottom: 35px;
     }
+
     .btn-shadow {
         box-shadow: 0 10px 0 rgba(255, 89, 144, .7);
         border-radius: 10px;
         padding: 10px 15px;
         transition: all .5s;
     }
+
     .section-progress .progress-item {
-
         padding-top: 40px;
-
     }
 
 }
@@ -318,7 +348,7 @@ h4 {
     }
 
     .section-watch .nav-pills .nav-item {
-       width: 100%;
+        width: 100%;
         text-align: center;
     }
 }
