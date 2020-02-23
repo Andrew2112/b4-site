@@ -134,11 +134,11 @@ h4 {
     color: #484848;
 }
 
-.section-watch .nav-pills {
+.section-tabs .nav-pills {
     margin-bottom: 45px;
 }
 
-.section-watch .nav-pills .nav-link {
+.section-tabs .nav-pills .nav-link {
     font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
@@ -146,7 +146,7 @@ h4 {
     color: #484848;
 }
 
-.section-watch .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.section-tabs .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     background-color: #f42267;
     color: #ffffff;
     box-shadow: 0 4px 16px rgba(0, 0, 0, .35);
@@ -260,14 +260,17 @@ h4 {
     -webkit-text-fill-color: transparent;
     padding-left: 15px;
 }
+
 .section-design p {
     font-size: 14px;
 }
-.embed-responsive{
+
+.embed-responsive {
     position: relative;
     border-radius: 10px;
 }
-#videoPlayBtn{
+
+#videoPlayBtn {
     width: 100%;
     height: 100%;
     z-index: 1000;
@@ -275,6 +278,32 @@ h4 {
     cursor: pointer;
     top: 0;
     background: url(../img/play.png) center no-repeat;
+}
+
+/*=============================section-work===========================*/
+.section-work {
+    background-color: #f1f1f1;
+}
+
+.section-work h4 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.section-work p {
+    font-size: 20px;
+    color: #333333;
+}
+.gallery-item{
+    margin-bottom: 20px;
+}
+.gallery a img{
+    transition: all .5s;
+    box-shadow: 0 10px 0 -15px rgba(0,0,0,.2);
+}
+.gallery a:hover img{
+    box-shadow: 0 14px 30px -15px rgba(0,0,0,.5);
 }
 /*large Devices, Wide Screen*/
 @media only screen and(max-width: 1200px) {

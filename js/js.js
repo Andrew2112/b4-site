@@ -1,0 +1,3 @@
+$(function () {
+baguetteBox.run('.gallery');
+});
