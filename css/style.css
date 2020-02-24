@@ -305,6 +305,10 @@ h4 {
 .gallery a:hover img{
     box-shadow: 0 14px 30px -15px rgba(0,0,0,.5);
 }
+/*=============================section-client===========================*/
+.section-client{
+    background-color: #4b2d7f;
+}
 /*large Devices, Wide Screen*/
 @media only screen and(max-width: 1200px) {
 
@@ -410,6 +414,9 @@ h4 {
 
     .section-progress .progress-item {
         padding-top: 40px;
+    }
+    .section-client div img{
+        margin-bottom: 40px;
     }
 
 }
