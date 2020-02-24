@@ -337,7 +337,8 @@ h4 {
     font-size: 50px;
     font-weight: 600;
 }
-.section-reviews .blockquote{
+
+.section-reviews .blockquote {
     font-style: italic;
     font-weight: 500;
     font-size: 22px;
@@ -345,7 +346,8 @@ h4 {
     padding-left: 40px;
     margin-top: 70px;
 }
-.section-reviews .blockquote::before{
+
+.section-reviews .blockquote::before {
     content: '\201C';
     font-size: 200px;
     font-weight: 500;
@@ -354,8 +356,64 @@ h4 {
     top: -120px;
     left: -55px;
 }
-.section-reviews .blockquote-footer{
+
+.section-reviews .blockquote-footer {
     margin-top: 80px;
+}
+
+/*=============================section-form===========================*/
+.section-form {
+    background: url(../img/form-bg.png) center no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.section-form h4 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.section-form h5 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.section-form p {
+    font-size: 18px;
+    margin-bottom: 65px;
+}
+
+.section-form .btn-violet {
+    background-color: #4b2d7f;
+}
+
+.btn-violet.btn-shadow {
+    box-shadow: 0 7px 0 #a57ee9;
+}
+
+.btn-violet.btn-shadow:hover {
+    background-color: #3a2362;
+    box-shadow: 0 5px 0 #a57ee9;
+}
+
+.section-form .form-control {
+    height: 51px;
+    background-color: rgba(255, 255, 255, .35);
+    color: #ffffff;
+    font-size: 15px;
+    border: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+}
+
+.section-form .form-control::placeholder {
+    color: #ffffff;
+}
+.section-form .form-control:focus{
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25) ;
 }
 /*large Devices, Wide Screen*/
 @media only screen and(max-width: 1200px) {
@@ -383,6 +441,7 @@ h4 {
         color: #ffffff;
         padding: 20px;
     }
+
     .section-reviews h3 {
         font-size: 20px;
 
@@ -392,17 +451,20 @@ h4 {
         font-size: 30px;
 
     }
-    .section-reviews .blockquote{
+
+    .section-reviews .blockquote {
 
         font-size: 16px;
 
     }
-    .section-reviews .blockquote::before{
+
+    .section-reviews .blockquote::before {
 
         font-size: 160px;
 
     }
-    .section-reviews .blockquote-footer{
+
+    .section-reviews .blockquote-footer {
         margin-top: 30px;
     }
 }
@@ -440,6 +502,7 @@ h4 {
         padding-bottom: 0px;
 
     }
+
     .section-reviews h3 {
         font-size: 20px;
 
@@ -449,13 +512,15 @@ h4 {
         font-size: 25px;
 
     }
-    .section-reviews .blockquote{
+
+    .section-reviews .blockquote {
         margin-top: 20px;
         font-size: 14px;
         padding-left: 0;
 
     }
-    .section-reviews .blockquote::before{
+
+    .section-reviews .blockquote::before {
         content: '\201C';
         font-size: 60px;
         font-weight: 500;
@@ -464,7 +529,8 @@ h4 {
         top: -30px;
         left: -50px;
     }
-    .section-reviews .blockquote-footer{
+
+    .section-reviews .blockquote-footer {
         margin-top: 15px;
     }
 }
@@ -518,13 +584,15 @@ h4 {
     }
 
 }
-@media only screen and (max-width: 575px){
-    .section-reviews .carousel-caption{
+
+@media only screen and (max-width: 575px) {
+    .section-reviews .carousel-caption {
         position: static;
         width: 70%;
         margin: auto;
     }
 }
+
 @media only screen and (max-width: 480px) {
     .section-watch h3 {
         font-size: 25px;
