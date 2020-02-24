@@ -412,9 +412,46 @@ h4 {
 .section-form .form-control::placeholder {
     color: #ffffff;
 }
-.section-form .form-control:focus{
-    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25) ;
+
+.section-form .form-control:focus {
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
 }
+
+/*=============================section-social===========================*/
+.section-social {
+    background: url(../img/social-bg.png) center no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.section-social a {
+    color: #ffffff;
+    font-size: 27px;
+}
+
+.section-social .list-group-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    background-color: inherit;
+    border: none;
+    border-right: #ffffff;
+}
+
+.section-social .list-group-item a {
+    text-decoration: none;
+}
+
+.section-social .line {
+    border-right: 2px solid #ccc !important; /* Параметры линии */
+    padding-right: 40px !important;
+}
+
+.section-social .line:last-child {
+    border-right: none !important;
+    padding-right: 40px !important;
+}
+
 /*large Devices, Wide Screen*/
 @media only screen and(max-width: 1200px) {
 
@@ -478,6 +515,13 @@ h4 {
     }
 }
 
+@media screen and (max-width: 901px) {
+    .section-social .line {
+
+        padding-right: 15px !important;
+    }
+}
+
 /*mall Devices, Tablets*/
 @media only screen and (max-width: 768px) {
     .main-header-text {
@@ -533,6 +577,15 @@ h4 {
     .section-reviews .blockquote-footer {
         margin-top: 15px;
     }
+
+    .section-social .line {
+
+        padding-right: 20px !important;
+    }
+
+    .section-social .line a {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -583,6 +636,12 @@ h4 {
         margin-bottom: 40px;
     }
 
+    .section-social .line {
+        border-right: none !important;
+        padding-right: 10px !important;
+
+    }
+
 }
 
 @media only screen and (max-width: 575px) {
@@ -590,6 +649,11 @@ h4 {
         position: static;
         width: 70%;
         margin: auto;
+    }
+    .section-social .line {
+        border-right: none !important;
+        padding-right: 50px !important;
+
     }
 }
 
