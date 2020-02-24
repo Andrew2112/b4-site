@@ -295,19 +295,67 @@ h4 {
     font-size: 20px;
     color: #333333;
 }
-.gallery-item{
+
+.gallery-item {
     margin-bottom: 20px;
 }
-.gallery a img{
+
+.gallery a img {
     transition: all .5s;
-    box-shadow: 0 10px 0 -15px rgba(0,0,0,.2);
+    box-shadow: 0 10px 0 -15px rgba(0, 0, 0, .2);
 }
-.gallery a:hover img{
-    box-shadow: 0 14px 30px -15px rgba(0,0,0,.5);
+
+.gallery a:hover img {
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .5);
 }
+
 /*=============================section-client===========================*/
-.section-client{
+.section-client {
     background-color: #4b2d7f;
+}
+
+/*=============================section-reviews===========================*/
+.section-reviews {
+    background: url(../img/happy-bg.png) center no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.section-reviews .carousel-caption {
+    top: 5%;
+    bottom: auto;
+    text-align: left;
+}
+
+.section-reviews h3 {
+    font-size: 40px;
+
+}
+
+.section-reviews h4 {
+    font-size: 50px;
+    font-weight: 600;
+}
+.section-reviews .blockquote{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 22px;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 70px;
+}
+.section-reviews .blockquote::before{
+    content: '\201C';
+    font-size: 200px;
+    font-weight: 500;
+    color: #f42267;
+    position: absolute;
+    top: -120px;
+    left: -55px;
+}
+.section-reviews .blockquote-footer{
+    margin-top: 80px;
 }
 /*large Devices, Wide Screen*/
 @media only screen and(max-width: 1200px) {
@@ -334,6 +382,28 @@ h4 {
         max-width: 500px;
         color: #ffffff;
         padding: 20px;
+    }
+    .section-reviews h3 {
+        font-size: 20px;
+
+    }
+
+    .section-reviews h4 {
+        font-size: 30px;
+
+    }
+    .section-reviews .blockquote{
+
+        font-size: 16px;
+
+    }
+    .section-reviews .blockquote::before{
+
+        font-size: 160px;
+
+    }
+    .section-reviews .blockquote-footer{
+        margin-top: 30px;
     }
 }
 
@@ -369,6 +439,33 @@ h4 {
 
         padding-bottom: 0px;
 
+    }
+    .section-reviews h3 {
+        font-size: 20px;
+
+    }
+
+    .section-reviews h4 {
+        font-size: 25px;
+
+    }
+    .section-reviews .blockquote{
+        margin-top: 20px;
+        font-size: 14px;
+        padding-left: 0;
+
+    }
+    .section-reviews .blockquote::before{
+        content: '\201C';
+        font-size: 60px;
+        font-weight: 500;
+        color: #f42267;
+        position: absolute;
+        top: -30px;
+        left: -50px;
+    }
+    .section-reviews .blockquote-footer{
+        margin-top: 15px;
     }
 }
 
@@ -415,12 +512,19 @@ h4 {
     .section-progress .progress-item {
         padding-top: 40px;
     }
-    .section-client div img{
+
+    .section-client div img {
         margin-bottom: 40px;
     }
 
 }
-
+@media only screen and (max-width: 575px){
+    .section-reviews .carousel-caption{
+        position: static;
+        width: 70%;
+        margin: auto;
+    }
+}
 @media only screen and (max-width: 480px) {
     .section-watch h3 {
         font-size: 25px;
