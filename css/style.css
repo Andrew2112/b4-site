@@ -24,7 +24,8 @@ h4 {
     font-size: 44px;
     margin-bottom: 20px;
 }
-.scrollToTop{
+
+.scrollToTop {
     position: fixed;
     bottom: 60px;
     right: 30px;
@@ -39,37 +40,41 @@ h4 {
     background: #da1757;
     opacity: .5;
     border: none;
-    box-shadow: 2px 3px 10px rgba(0,0,0,.35);
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, .35);
 }
-.scrollToTop:hover{
+
+.scrollToTop:hover {
     background: #ffffff;
     color: #da1757;
-    box-shadow: 0px 3px 7px rgba(0,0,0,.5);
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, .5);
     border: 1px solid #da1757;
 }
+
 /*===========================header==========================*/
-.main-header {
+.main-header-all {
     background: linear-gradient(45deg, rgba(255, 3, 8, .75) 2%, rgba(8, 6, 250, 1) 100%), url(../img/header-img.png) center no-repeat;
     background-size: cover;
-    height: 100vh;
-    min-height: 600px;
     position: relative;
-
 }
 
-.main-header .navbar-brand {
+.header-index {
+    height: 100vh;
+    min-height: 600px;
+}
+
+.main-header-all .navbar-brand {
     color: #ffffff;
     font-weight: 600;
     font-size: 42px;
 }
 
-.main-header .navbar-nav .nav-item .nav-link {
+.main-header-all .navbar-nav .nav-item .nav-link {
     color: #ffffff;
     font-size: 17px;
     font-weight: 600;
 }
 
-.main-header .navbar-nav .nav-item .nav-link::after {
+.main-header-all .navbar-nav .nav-item .nav-link::after {
     content: '';
     display: block;
     width: 100%;
@@ -79,7 +84,7 @@ h4 {
     transition: .3s;
 }
 
-.main-header .navbar-nav .nav-item .nav-link:hover::after {
+.main-header-all .navbar-nav .nav-item .nav-link:hover::after {
     transform: scale(1);
 }
 
@@ -533,6 +538,161 @@ h4 {
     content: none;
 }
 
+/*===========================header-page==========================*/
+.main-header-page {
+    min-height: 100px;
+}
+
+
+/*===========================section-content==========================*/
+.section-content {
+    padding: 40px 0;
+}
+
+.article-preview {
+    border: 1px solid #C1C1C1;
+    padding: 20px;
+    transition: all .5s;
+    box-shadow: 2px 3px 11px 1px rgba(0, 0, 0, .55);
+    margin-bottom: 30px;
+}
+
+.article-preview:hover {
+
+    box-shadow: 0px 15px 30px -15px rgba(0, 0, 0, .75);
+
+}
+
+.article-preview h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.article-preview a {
+    color: #484848;
+    transition: all .5s;
+}
+
+.article-preview a:hover {
+    color: #f42267;
+    text-decoration: none;
+}
+
+.article-date {
+    color: #da1757;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.article-date i {
+    padding-right: 10px;
+}
+
+.thumb {
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin: 0 20px 20px 0;
+    float: left;
+}
+
+.article-excerpt P {
+    font-size: 16px;
+
+}
+
+.article-preview .more {
+
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: all .5s;
+    font-weight: 600;
+    color: #484848;
+    box-shadow: 0px 15px 30px -15px rgba(0, 0, 0, .75);
+}
+
+.article-preview .more:hover {
+    color: #ffffff;
+    box-shadow: 0px 15px 30px -15px rgba(0, 0, 0, .75);
+    background-color: #da1757;
+}
+
+.widget-title {
+    color: #484848;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.widget-title::after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 30px;
+    background-color: #da1757;
+}
+
+.widget-categories ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.widget-categories ul li {
+    margin-bottom: 20px;
+}
+
+.widget-categories ul li::before {
+    content: "\f138";
+    font-family: 'Font Awesome 5 Free', serif;
+    font-weight: 900;
+    color: #da1757;
+    font-size: 16px;
+}
+
+.widget-categories ul li a {
+    padding-left: 10px;
+    font-size: 16px;
+    color: #484848;
+    text-decoration: none;
+    transition: all .5s;
+    display: inline-block;
+
+}
+
+.widget-categories ul li a:hover {
+
+    color: #da1757;
+}
+
+/*===========================pagination==========================*/
+
+
+.pagination .page-link {
+    color: #da1757;
+    transition: all .5s;
+    border: 1px solid #da1757;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 600;
+
+}
+
+.pagination .page-link:hover {
+    background-color: #da1757;
+    color: #ffffff;
+    border-color: #f42267;
+}
+
+.page-item.active .page-link {
+    background-color: #da1757;
+    border-color: #da1757;
+}
+
 /*large Devices, Wide Screen*/
 @media only screen and(max-width: 1200px) {
 
@@ -757,5 +917,10 @@ h4 {
     .section-watch .nav-pills .nav-item {
         width: 100%;
         text-align: center;
+    }
+
+    .thumb {
+        float: none;
+        width: 100%;
     }
 }
