@@ -443,13 +443,72 @@ h4 {
 }
 
 .section-social .line {
-    border-right: 2px solid #ccc !important; /* Параметры линии */
+    border-right: 2px solid #7647c7 !important; /* Параметры линии */
     padding-right: 40px !important;
 }
 
 .section-social .line:last-child {
     border-right: none !important;
     padding-right: 40px !important;
+}
+
+/*=============================footer===========================*/
+.footer {
+    background: url(../img/world-map.png) center no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer h5 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.footer ul li a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #171717;
+}
+
+.footer .footer-images img {
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.copyright {
+    background-color: #f6f6f6;
+    padding: 50px 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.copyright a,
+.copyright span {
+    color: #171717;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+.copyright a::after,
+.copyright span::after {
+    content: '\00B7';
+    position: absolute;
+    right: -3px;
+}
+
+.copyright li:last-child a::after {
+    content: none;
 }
 
 /*large Devices, Wide Screen*/
@@ -459,6 +518,13 @@ h4 {
 
 /*Medium Devices, Desktops*/
 @media screen and (max-width: 992px) {
+    .copyright a,
+    .copyright span {
+
+        font-size: 14px;
+
+    }
+
     .img-header {
         position: absolute;
         right: 18px;
@@ -492,7 +558,6 @@ h4 {
     .section-reviews .blockquote {
 
         font-size: 16px;
-
     }
 
     .section-reviews .blockquote::before {
@@ -650,6 +715,7 @@ h4 {
         width: 70%;
         margin: auto;
     }
+
     .section-social .line {
         border-right: none !important;
         padding-right: 50px !important;
