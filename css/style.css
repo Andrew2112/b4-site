@@ -24,7 +24,29 @@ h4 {
     font-size: 44px;
     margin-bottom: 20px;
 }
-
+.scrollToTop{
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: none;
+    font-size: 32px;
+    z-index: 1050;
+    color: #ffffff;
+    transition: all .5s;
+    background: #da1757;
+    opacity: .5;
+    border: none;
+    box-shadow: 2px 3px 10px rgba(0,0,0,.35);
+}
+.scrollToTop:hover{
+    background: #ffffff;
+    color: #da1757;
+    box-shadow: 0px 3px 7px rgba(0,0,0,.5);
+    border: 1px solid #da1757;
+}
 /*===========================header==========================*/
 .main-header {
     background: linear-gradient(45deg, rgba(255, 3, 8, .75) 2%, rgba(8, 6, 250, 1) 100%), url(../img/header-img.png) center no-repeat;
